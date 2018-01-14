@@ -6,7 +6,7 @@ set(STLINK_UDEV_RULES_DIR "/etc/udev/rules.d" CACHE PATH "Udev rules directory")
 set(STLINK_MODPROBED_DIR "/etc/modprobe.d" CACHE PATH "modprobe.d directory")
 set(LIB_INSTALL_DIR "lib" CACHE PATH "Main library directory")
 set(STLINK_LIBRARY_PATH "${LIB_INSTALL_DIR}/${CMAKE_LIBRARY_PATH}" CACHE PATH "Target lib directory")
-
+set(CMAKE_COLOR_MAKEFILE FALSE)
 option(STLINK_GENERATE_MANPAGES "Generate manpages with pandoc" OFF)
 
 if (POLICY CMP0042)
